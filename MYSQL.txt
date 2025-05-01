@@ -1,0 +1,13 @@
+create database FoodFrenzy;
+use FoodFrenzy;
+
+CREATE TABLE food (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    book_name VARCHAR(150) NOT NULL,
+    issue_date DATE NOT NULL,
+    return_date DATE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+select *from food;
+TRUNCATE TABLE userfood;
